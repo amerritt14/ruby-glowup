@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
    s.name        = "ruby-glowup"
-  s.version     = "0.0.0"
+  s.version     = "0.0.1"
   s.summary     = "Vibes"
   s.description = "Make your ruby slap frfr"
   s.authors     = ["Andrew Merritt"]
