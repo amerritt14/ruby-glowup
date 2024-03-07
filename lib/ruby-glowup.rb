@@ -6,15 +6,11 @@ module RubyGlowup
   included do
     class ::Object
       def self.bet?
-        return false if self.name.in?(%w[FalseClass NilClass])
-
-        true
+        ([self.name] & %w[FalseClass NilClass]).empty?
       end
 
       def self.cap?
-        return true if self.name.in?(%w[FalseClass NilClass])
-
-        false
+        !([self.name] & %w[FalseClass NilClass]).empty?
       end
 
       def self.no_cap?
